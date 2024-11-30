@@ -17,7 +17,7 @@ const SignIn = () => {
         const lastSignInTime = result?.user?.metadata?.lastSignInTime;
         const loginInfo = { email, lastSignInTime };
 
-        fetch("http://localhost:5000/users", {
+        fetch("https://coffee-store-server-eight-jade.vercel.app/users", {
           method: "PATCH",
           headers: {
             "content-type": "application/json",
@@ -81,7 +81,7 @@ const SignIn = () => {
             </div>
           </form>
           <div className="text-center pb-5">
-            <Link to="/signUp">Sign Up</Link>
+            <Link to="/signUp">Sign Up or Register</Link>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ const SignUp = () => {
         const createdAt = result?.user?.metadata?.creationTime;
         const newUser = { name, email, createdAt };
         // save user in database
-        fetch("http://localhost:5000/users", {
+        fetch("https://coffee-store-server-eight-jade.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",
